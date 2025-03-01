@@ -51,6 +51,10 @@
       transform: scale(0.99);
       box-shadow: 0 0 24px rgba(0,0,255,1.0);
     }
+    button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
     /* Кнопка іконки статистики у верхньому правому куті */
     #statsButton {
       position: fixed;
@@ -197,7 +201,7 @@
   <!-- ./index.html -->
   <!-- Кнопка статистики -->
   <button id="statsButton" title="Переглянути статистику">
-    <!-- Іконка списку -->
+    <!-- Іконка lists -->
     <svg id="statsIconList" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <line x1="8" y1="6" x2="21" y2="6"></line>
       <line x1="8" y1="12" x2="21" y2="12"></line>
